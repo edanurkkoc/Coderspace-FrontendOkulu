@@ -1,0 +1,27 @@
+.link{
+    color: orange;
+}
+.link:active{
+    color: aqua;
+}
+.link:hover{
+color: purple;
+}
+.link:visited{
+    color: blue;
+}
+.list_item{
+    color: pink;
+    list-style-type: none;
+    font-size: 18px;
+}
+/* odd:tek elemanları  */
+/* even:çift elemanları  */
+.list_item:nth-child(odd){
+    color: rgb(41, 102, 224);
+}
+/* ilk harfi */
+.list_item::first-letter{
+    color: rgb(28, 29, 30);
+    font-size: 60px;
+}

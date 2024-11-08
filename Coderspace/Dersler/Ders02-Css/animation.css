@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: kutucuk 2s ease-in-out infinite;
+}
+.box:hover{
+    background-color: yellow;
+}
+@keyframes kutucuk{
+    0%{
+        transform: translateX(0PX);
+        background-color: aquamarine;
+    }
+    50%{
+        transform: translateX(200px);
+        background-color: rgb(194, 77, 45);
+    }
+    100%{
+        transform: translateY(0px);
+        background-color: rgb(194, 77, 45);
+
+    }
+    
+}

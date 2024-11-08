@@ -1,0 +1,35 @@
+$bgColor: red;
+$x150: 150px;
+$x100: 100px;
+
+@mixin boxMixin($color,$width,$height){
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+
+.container {
+  display: flex;
+  &:hover {
+    background-color: aquamarine;
+  }
+  .box {
+    width: $x150;
+    height: $x150;
+    background-color: brown;
+  }
+  .box1{
+    @include boxMixin($bgColor,$x150 ,$x100 );
+  }
+//   boox1 deki width özelliğini değiştir=box3
+  .box3{
+    @extend .box1;
+    width: $x100 * 3;
+  }
+  .box4{
+    @include boxMixin(orange,$x150 ,$x100 );
+    &.deneme{
+        background-color: blueviolet;
+    }
+  }
+}
